@@ -1,0 +1,28 @@
+{
+  "name": "emotesbot",
+  "version": "1.0.0",
+  "description": "Telegram bot for sending text emotes.",
+  "main": "index.js",
+  "repository": "https://github.com/devmattrick/EmotesBot.git",
+  "author": "Matthew McCune <contact@matthew.cx>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "watch": "ts-node src/index.ts",
+    "build": "tsc src/index.ts -o dist/",
+    "migrate:make": "node bin/migrate-make.js"
+  },
+  "dependencies": {
+    "@types/dotenv": "^6.1.0",
+    "@types/knex": "^0.15.0",
+    "@types/sqlite3": "^3.1.3",
+    "dotenv": "^6.1.0",
+    "knex": "^0.15.2",
+    "sqlite3": "^4.0.4",
+    "telegraf": "^3.25.0"
+  },
+  "devDependencies": {
+    "ts-node": "^7.0.1",
+    "typescript": "^3.1.6"
+  }
+}
